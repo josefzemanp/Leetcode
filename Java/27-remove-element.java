@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/remove-element/submissions/2065880129
+
 class Solution {
     public int removeElement(int[] nums, int val) {
         // [3,5,0,3,3,2,3]
@@ -11,7 +13,7 @@ class Solution {
                 nums[i] = -1;
                 steps++;
             } else {
-                if(dist != 0){
+                if(steps != 0){
                     nums[i-steps] = nums[i];
                     nums[i] = -1;
                 }
