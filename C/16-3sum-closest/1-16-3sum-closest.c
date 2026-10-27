@@ -1,3 +1,4 @@
+// O(n^3)
 int distance(int a, int b){
     if((a - b) < 0){
         return (a - b) + -2 * (a - b);
