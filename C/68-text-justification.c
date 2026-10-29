@@ -58,7 +58,7 @@ char** fullJustify(char** words, int wordsSize, int maxWidth, int* returnSize) {
         strcat(output[count], words[j]);
     }
 
-    while(strlen(output[count]) < maxWidth){
+    while(strlen(output[count]) < (size_t)maxWidth){
         strcat(output[count], " ");
     }
 
